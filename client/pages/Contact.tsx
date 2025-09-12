@@ -1,8 +1,8 @@
-import PlaceholderPage from '../components/PlaceholderPage';
+import PlaceholderPage from "../components/PlaceholderPage";
 
 export default function Contact() {
   return (
-    <PlaceholderPage 
+    <PlaceholderPage
       title="Contact Us"
       description="Get in touch with our team for support, questions, or partnership inquiries."
     />

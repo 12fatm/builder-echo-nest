@@ -1,5 +1,5 @@
-import { Search, ShoppingCart, Bell, ChevronDown } from 'lucide-react';
-import { Button } from './ui/button';
+import { Search, ShoppingCart, Bell, ChevronDown } from "lucide-react";
+import { Button } from "./ui/button";
 
 export default function Header() {
   return (
@@ -15,22 +15,52 @@ export default function Header() {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-6 text-sm">
-            <a href="/" className="text-gray-700 hover:text-primary font-medium">Home</a>
-            <a href="/venues" className="text-primary font-semibold">Venues</a>
-            <a href="/suppliers" className="text-gray-700 hover:text-primary font-medium">Suppliers</a>
-            <a href="/my-events" className="text-gray-700 hover:text-primary font-medium">My Events</a>
-            <a href="/contact" className="text-gray-700 hover:text-primary font-medium">Contact Us</a>
+            <a
+              href="/"
+              className="text-gray-700 hover:text-primary font-medium"
+            >
+              Home
+            </a>
+            <a href="/venues" className="text-primary font-semibold">
+              Venues
+            </a>
+            <a
+              href="/suppliers"
+              className="text-gray-700 hover:text-primary font-medium"
+            >
+              Suppliers
+            </a>
+            <a
+              href="/my-events"
+              className="text-gray-700 hover:text-primary font-medium"
+            >
+              My Events
+            </a>
+            <a
+              href="/contact"
+              className="text-gray-700 hover:text-primary font-medium"
+            >
+              Contact Us
+            </a>
           </nav>
 
           {/* Right side controls */}
           <div className="flex items-center gap-2 md:gap-4">
             {/* Cart */}
-            <Button variant="ghost" size="icon" className="text-gray-600 hover:text-primary">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="text-gray-600 hover:text-primary"
+            >
               <ShoppingCart className="h-5 w-5" />
             </Button>
 
             {/* Notifications */}
-            <Button variant="ghost" size="icon" className="text-gray-600 hover:text-primary">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="text-gray-600 hover:text-primary"
+            >
               <Bell className="h-5 w-5" />
             </Button>
 

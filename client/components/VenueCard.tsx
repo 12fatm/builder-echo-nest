@@ -1,5 +1,5 @@
-import { Star, MapPin, Maximize, Users } from 'lucide-react';
-import { Button } from './ui/button';
+import { Star, MapPin, Maximize, Users } from "lucide-react";
+import { Button } from "./ui/button";
 
 interface VenueCardProps {
   name: string;
@@ -20,17 +20,13 @@ export default function VenueCard({
   capacity,
   price,
   currency,
-  image
+  image,
 }: VenueCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
       {/* Image */}
       <div className="relative h-48 bg-gray-200">
-        <img
-          src={image}
-          alt={name}
-          className="w-full h-full object-cover"
-        />
+        <img src={image} alt={name} className="w-full h-full object-cover" />
       </div>
 
       {/* Content */}
@@ -64,7 +60,9 @@ export default function VenueCard({
         {/* Price and Button */}
         <div className="flex items-center justify-between">
           <div>
-            <span className="text-xl font-bold text-gray-900">{price} {currency}</span>
+            <span className="text-xl font-bold text-gray-900">
+              {price} {currency}
+            </span>
             <span className="text-sm text-gray-500 ml-1">Person/Hour</span>
           </div>
           <Button className="bg-primary hover:bg-primary/90 text-white">

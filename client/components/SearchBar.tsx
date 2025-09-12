@@ -1,5 +1,11 @@
-import { Search, MapPin, Calendar, Users, SlidersHorizontal } from 'lucide-react';
-import { Button } from './ui/button';
+import {
+  Search,
+  MapPin,
+  Calendar,
+  Users,
+  SlidersHorizontal,
+} from "lucide-react";
+import { Button } from "./ui/button";
 
 export default function SearchBar() {
   return (
@@ -69,7 +75,10 @@ export default function SearchBar() {
             <Search className="h-4 w-4 mr-2" />
             Search
           </Button>
-          <Button variant="outline" className="h-12 w-12 p-0 rounded-lg border-gray-300">
+          <Button
+            variant="outline"
+            className="h-12 w-12 p-0 rounded-lg border-gray-300"
+          >
             <SlidersHorizontal className="h-5 w-5 text-gray-700" />
           </Button>
         </div>

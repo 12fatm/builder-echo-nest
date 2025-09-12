@@ -1,10 +1,10 @@
-import { ChevronRight } from 'lucide-react';
-import Header from '../components/Header';
-import SearchBar from '../components/SearchBar';
-import FilterSidebar from '../components/FilterSidebar';
-import VenueCard from '../components/VenueCard';
-import Footer from '../components/Footer';
-import { Button } from '../components/ui/button';
+import { ChevronRight } from "lucide-react";
+import Header from "../components/Header";
+import SearchBar from "../components/SearchBar";
+import FilterSidebar from "../components/FilterSidebar";
+import VenueCard from "../components/VenueCard";
+import Footer from "../components/Footer";
+import { Button } from "../components/ui/button";
 
 const mockVenues = [
   {
@@ -16,29 +16,29 @@ const mockVenues = [
     capacity: 250,
     price: 200,
     currency: "JD",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
   },
   {
     id: 2,
     name: "Diamond Ballroom",
     rating: 5.0,
-    location: "Crowne Plaza Jeddah Al Salam", 
+    location: "Crowne Plaza Jeddah Al Salam",
     size: "444.4 sq. m",
     capacity: 250,
     price: 200,
     currency: "JD",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
   },
   {
     id: 3,
     name: "Diamond Ballroom",
     rating: 5.0,
     location: "Crowne Plaza Jeddah Al Salam",
-    size: "444.4 sq. m", 
+    size: "444.4 sq. m",
     capacity: 250,
     price: 200,
     currency: "JD",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
   },
   {
     id: 4,
@@ -48,19 +48,19 @@ const mockVenues = [
     size: "444.4 sq. m",
     capacity: 250,
     price: 200,
-    currency: "JD", 
-    image: "/placeholder.svg"
-  }
+    currency: "JD",
+    image: "/placeholder.svg",
+  },
 ];
 
 export default function Index() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <SearchBar />
-        
+
         {/* Breadcrumb */}
         <nav className="flex items-center text-sm text-gray-500 mb-6">
           <span>Venue</span>
@@ -111,13 +111,13 @@ export default function Index() {
               <Button variant="outline" size="icon">
                 <ChevronRight className="h-4 w-4 rotate-180" />
               </Button>
-              
+
               <Button className="bg-primary text-white">1</Button>
               <Button variant="outline">2</Button>
               <Button variant="outline">3</Button>
               <Button variant="outline">4</Button>
               <Button variant="outline">5</Button>
-              
+
               <Button variant="outline" size="icon">
                 <ChevronRight className="h-4 w-4" />
               </Button>

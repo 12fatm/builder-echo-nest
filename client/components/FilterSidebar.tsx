@@ -1,6 +1,6 @@
-import { Search, Star, Filter, ListChecks, Sparkles } from 'lucide-react';
-import { Button } from './ui/button';
-import { Checkbox } from './ui/checkbox';
+import { Search, Star, Filter, ListChecks, Sparkles } from "lucide-react";
+import { Button } from "./ui/button";
+import { Checkbox } from "./ui/checkbox";
 
 export default function FilterSidebar() {
   return (
@@ -33,16 +33,19 @@ export default function FilterSidebar() {
         </h3>
         <div className="space-y-2">
           {[
-            'Hotel',
-            'Co-working space', 
-            'Lounge',
-            'Outdoor',
-            'Cafe',
-            'Women Only'
+            "Hotel",
+            "Co-working space",
+            "Lounge",
+            "Outdoor",
+            "Cafe",
+            "Women Only",
           ].map((type) => (
             <div key={type} className="flex items-center space-x-2">
               <Checkbox id={type} />
-              <label htmlFor={type} className="text-sm text-gray-700 cursor-pointer">
+              <label
+                htmlFor={type}
+                className="text-sm text-gray-700 cursor-pointer"
+              >
                 {type}
               </label>
             </div>
@@ -58,18 +61,21 @@ export default function FilterSidebar() {
         </h3>
         <div className="space-y-2">
           {[
-            { label: 'Onsite catering', checked: true },
-            { label: 'Onsite restaurant', checked: false },
-            { label: 'Air Conditioning', checked: false },
-            { label: 'Onsite restaurant', checked: false },
-            { label: 'Sound system', checked: false },
-            { label: 'Projector', checked: false },
-            { label: 'Free parking zones', checked: false },
-            { label: 'Printing & Scanning', checked: false }
+            { label: "Onsite catering", checked: true },
+            { label: "Onsite restaurant", checked: false },
+            { label: "Air Conditioning", checked: false },
+            { label: "Onsite restaurant", checked: false },
+            { label: "Sound system", checked: false },
+            { label: "Projector", checked: false },
+            { label: "Free parking zones", checked: false },
+            { label: "Printing & Scanning", checked: false },
           ].map((amenity) => (
             <div key={amenity.label} className="flex items-center space-x-2">
               <Checkbox id={amenity.label} defaultChecked={amenity.checked} />
-              <label htmlFor={amenity.label} className="text-sm text-gray-700 cursor-pointer">
+              <label
+                htmlFor={amenity.label}
+                className="text-sm text-gray-700 cursor-pointer"
+              >
                 {amenity.label}
               </label>
             </div>
@@ -87,14 +93,17 @@ export default function FilterSidebar() {
           {[5, 4, 3, 2, 1].map((rating) => (
             <div key={rating} className="flex items-center space-x-2">
               <Checkbox id={`rating-${rating}`} />
-              <label htmlFor={`rating-${rating}`} className="flex items-center cursor-pointer">
+              <label
+                htmlFor={`rating-${rating}`}
+                className="flex items-center cursor-pointer"
+              >
                 {Array.from({ length: 5 }, (_, i) => (
                   <Star
                     key={i}
                     className={`w-4 h-4 ${
                       i < rating
-                        ? 'text-yellow-400 fill-yellow-400'
-                        : 'text-gray-300'
+                        ? "text-yellow-400 fill-yellow-400"
+                        : "text-gray-300"
                     }`}
                   />
                 ))}
@@ -105,8 +114,8 @@ export default function FilterSidebar() {
       </div>
 
       {/* Reset Filter Button */}
-      <Button 
-        variant="outline" 
+      <Button
+        variant="outline"
         className="w-full border-primary text-primary hover:bg-primary hover:text-white"
       >
         Reset Filter
