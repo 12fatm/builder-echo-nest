@@ -70,7 +70,7 @@ export default function Index() {
           <span className="text-gray-900 font-medium">Details</span>
         </nav>
 
-        <div className="flex gap-8">
+        <div className="flex gap-6">
           {/* Filter Sidebar */}
           <div className="hidden lg:block flex-shrink-0">
             <FilterSidebar />
@@ -90,7 +90,7 @@ export default function Index() {
             </div>
 
             {/* Venue Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 mb-8">
               {mockVenues.map((venue) => (
                 <VenueCard
                   key={venue.id}
