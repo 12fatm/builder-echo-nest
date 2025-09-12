@@ -4,7 +4,7 @@ import { Checkbox } from './ui/checkbox';
 
 export default function FilterSidebar() {
   return (
-    <div className="w-80 bg-white rounded-lg shadow-sm border border-gray-200 p-6 h-fit">
+    <div className="w-80 bg-[rgba(245,245,247,0.8)] rounded-lg shadow-sm border border-gray-200 p-6 h-fit">
       <div className="flex items-center gap-2 mb-6">
         <Filter className="h-5 w-5 text-primary" />
         <h2 className="text-lg font-semibold text-gray-900">Filter</h2>

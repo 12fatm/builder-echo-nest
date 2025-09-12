@@ -55,7 +55,7 @@ const mockVenues = [
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-background">
       <Header />
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -79,7 +79,7 @@ export default function Index() {
           {/* Main Content */}
           <div className="flex-1">
             {/* Results Header */}
-            <div className="flex items-center justify-between mb-6">
+            <div className="mb-6 rounded-xl border border-gray-200 bg-[rgba(245,245,247,0.8)] px-4 py-3 flex items-center justify-between">
               <h1 className="text-xl font-semibold text-gray-900">
                 Showing 5 of 20 Results
               </h1>
