@@ -1,4 +1,4 @@
-import { Search, Star, Filter } from 'lucide-react';
+import { Search, Star, Filter, ListChecks, Sparkles } from 'lucide-react';
 import { Button } from './ui/button';
 import { Checkbox } from './ui/checkbox';
 
@@ -28,9 +28,7 @@ export default function FilterSidebar() {
       {/* Venue Type */}
       <div className="mb-6">
         <h3 className="text-sm font-medium text-gray-900 mb-3 flex items-center gap-2">
-          <div className="w-4 h-4 bg-primary rounded-sm flex items-center justify-center">
-            <span className="text-white text-xs">📍</span>
-          </div>
+          <ListChecks className="w-4 h-4 text-primary" />
           Venue Type
         </h3>
         <div className="space-y-2">
@@ -55,9 +53,7 @@ export default function FilterSidebar() {
       {/* Amenities & Features */}
       <div className="mb-6">
         <h3 className="text-sm font-medium text-gray-900 mb-3 flex items-center gap-2">
-          <div className="w-4 h-4 bg-primary rounded-sm flex items-center justify-center">
-            <span className="text-white text-xs">⭐</span>
-          </div>
+          <Sparkles className="w-4 h-4 text-primary" />
           Amenities & Features
         </h3>
         <div className="space-y-2">
@@ -84,9 +80,7 @@ export default function FilterSidebar() {
       {/* Rating */}
       <div className="mb-6">
         <h3 className="text-sm font-medium text-gray-900 mb-3 flex items-center gap-2">
-          <div className="w-4 h-4 bg-primary rounded-sm flex items-center justify-center">
-            <Star className="w-2 h-2 text-white fill-white" />
-          </div>
+          <Star className="w-4 h-4 text-primary" />
           Rating
         </h3>
         <div className="space-y-2">
