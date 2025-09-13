@@ -1,5 +1,6 @@
 import { Search, ShoppingCart, Bell, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
+import Logo from "./Logo";
 
 export default function Header() {
   return (
@@ -7,11 +8,9 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <div className="text-2xl font-extrabold tracking-tight text-primary">
-              Attnd
-            </div>
-          </div>
+          <a href="/" className="flex items-center" aria-label="Attnd home">
+            <Logo size="md" />
+          </a>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-6 text-sm">
