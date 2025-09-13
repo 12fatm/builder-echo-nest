@@ -49,7 +49,7 @@ export default function Header() {
             <Button
               variant="ghost"
               size="icon"
-              className="text-gray-600 hover:text-primary"
+              className="text-gray-600 hover:text-primary hover:bg-gray-100 transition-colors"
             >
               <ShoppingCart className="h-5 w-5" />
             </Button>
@@ -58,23 +58,23 @@ export default function Header() {
             <Button
               variant="ghost"
               size="icon"
-              className="text-gray-600 hover:text-primary"
+              className="text-gray-600 hover:text-primary hover:bg-gray-100 transition-colors"
             >
               <Bell className="h-5 w-5" />
             </Button>
 
             {/* User Profile */}
-            <div className="hidden sm:flex items-center gap-2">
-              <div className="w-8 h-8 bg-gray-200 border border-gray-300 rounded-full flex items-center justify-center">
-                <span className="text-sm font-medium text-gray-700">M</span>
+            <div className="hidden sm:flex items-center gap-2 cursor-pointer hover:bg-gray-50 rounded-lg px-2 py-1 transition-colors">
+              <div className="w-8 h-8 bg-gradient-to-br from-primary/20 to-primary/30 border border-primary/20 rounded-full flex items-center justify-center">
+                <span className="text-sm font-semibold text-primary">M</span>
               </div>
               <span className="text-sm font-medium text-gray-700">Mohamed</span>
               <ChevronDown className="h-4 w-4 text-gray-500" />
             </div>
 
             {/* Currency */}
-            <div className="flex items-center bg-gray-50 border border-gray-200 rounded-md px-2 py-1">
-              <span className="text-sm font-medium text-gray-700">£</span>
+            <div className="flex items-center bg-gray-50 border border-gray-200 rounded-lg px-3 py-1.5 hover:border-gray-300 transition-colors cursor-pointer">
+              <span className="text-sm font-semibold text-gray-700">£</span>
             </div>
           </div>
         </div>

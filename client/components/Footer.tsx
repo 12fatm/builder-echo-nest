@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import { Linkedin, Twitter, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -36,9 +37,15 @@ export default function Footer() {
             </div>
             <div className="text-center">©2024 founded - All Rights Reserved</div>
             <div className="flex items-center gap-4 text-gray-400">
-              <a aria-label="twitter" href="#" className="hover:text-gray-600">•</a>
-              <a aria-label="linkedin" href="#" className="hover:text-gray-600">•</a>
-              <a aria-label="instagram" href="#" className="hover:text-gray-600">•</a>
+              <a aria-label="LinkedIn" href="#" className="hover:text-primary transition-colors">
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a aria-label="Twitter" href="#" className="hover:text-primary transition-colors">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a aria-label="Instagram" href="#" className="hover:text-primary transition-colors">
+                <Instagram className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>
