@@ -12,20 +12,40 @@ export default function Footer() {
 
         {/* Links Row */}
         <nav className="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-gray-700 mb-8">
-          <a href="/create-event" className="hover:text-primary">Create Event</a>
-          <a href="/venue" className="hover:text-primary">Venue</a>
-          <a href="/suppliers" className="hover:text-primary">Suppliers</a>
-          <a href="/about" className="hover:text-primary">About us</a>
-          <a href="/terms" className="hover:text-primary">Terms & conditions</a>
-          <a href="/help" className="hover:text-primary">Help & FAQs</a>
-          <a href="/contact" className="hover:text-primary">Contact us</a>
+          <a href="/create-event" className="hover:text-primary">
+            Create Event
+          </a>
+          <a href="/venue" className="hover:text-primary">
+            Venue
+          </a>
+          <a href="/suppliers" className="hover:text-primary">
+            Suppliers
+          </a>
+          <a href="/about" className="hover:text-primary">
+            About us
+          </a>
+          <a href="/terms" className="hover:text-primary">
+            Terms & conditions
+          </a>
+          <a href="/help" className="hover:text-primary">
+            Help & FAQs
+          </a>
+          <a href="/contact" className="hover:text-primary">
+            Contact us
+          </a>
         </nav>
 
         {/* Payments */}
         <div className="flex justify-center items-center gap-3 mb-10">
-          <span className="px-3 py-1 rounded-md bg-white border text-xs font-semibold text-gray-700">VISA</span>
-          <span className="px-3 py-1 rounded-md bg-white border text-xs font-semibold text-gray-700">Mastercard</span>
-          <span className="px-3 py-1 rounded-md bg-white border text-xs font-semibold text-gray-700">mada</span>
+          <span className="px-3 py-1 rounded-md bg-white border text-xs font-semibold text-gray-700">
+            VISA
+          </span>
+          <span className="px-3 py-1 rounded-md bg-white border text-xs font-semibold text-gray-700">
+            Mastercard
+          </span>
+          <span className="px-3 py-1 rounded-md bg-white border text-xs font-semibold text-gray-700">
+            mada
+          </span>
         </div>
 
         {/* Bottom bar */}
@@ -35,15 +55,29 @@ export default function Footer() {
               <span>CR: 1009904329</span>
               <span>VAT: 310544830000003</span>
             </div>
-            <div className="text-center">©2024 founded - All Rights Reserved</div>
+            <div className="text-center">
+              ©2024 founded - All Rights Reserved
+            </div>
             <div className="flex items-center gap-4 text-gray-400">
-              <a aria-label="LinkedIn" href="#" className="hover:text-primary transition-colors">
+              <a
+                aria-label="LinkedIn"
+                href="#"
+                className="hover:text-primary transition-colors"
+              >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a aria-label="Twitter" href="#" className="hover:text-primary transition-colors">
+              <a
+                aria-label="Twitter"
+                href="#"
+                className="hover:text-primary transition-colors"
+              >
                 <Twitter className="w-5 h-5" />
               </a>
-              <a aria-label="Instagram" href="#" className="hover:text-primary transition-colors">
+              <a
+                aria-label="Instagram"
+                href="#"
+                className="hover:text-primary transition-colors"
+              >
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
